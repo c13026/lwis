@@ -3,12 +3,12 @@
         <div class="topnav" id="myTopnav">
             <div class="helogo">
                 <a href="index.php">
-                    <img  src="images/logo.svg" alt="活水泉源">
-                    <span>活水泉源國際</span>
+                    <img  src="images/logo.svg" alt="LIVING WATER IN SPRING">
                 </a>
+                <span><a href="index.php">中</a> | <a href="en/">EN</a></span>
             </div>
             <a href="about.php"><span>About</span><span> | </span><span>關於我們</span></a>
-            <a href="products.php"><span>Products</span><span> | </span><span>產品系列</span></a>
+            <a href="products.php?category=sheet"><span>Products</span><span> | </span><span>產品系列</span></a>
             <a href="map.php"><span>Map</span><span> | </span><span>服務據點</span></a>
             <a href="contact.php"><span>Contact</span><span> | </span><span>聯絡我們</span></a>
             <a href="catalogs.php"><span>Catalogs</span><span> | </span><span>型錄</span></a>
@@ -24,17 +24,23 @@
     </div>
 </header>
 <aside>
-    <div class="logo">
+    <!-- <div class="logo">
         <a href="index.php">
             <img  src="images/logo.svg" alt="活水泉源"><br>
-            <span>活水泉源國際 | lwis.com</span>
+            <span>活水泉源國際 | lwis.com.tw</span>
         </a>
+    </div> -->
+    <div class="logo">
+        <a href="index.php">
+            <img  src="images/logo.svg" alt="活水泉源">
+        </a>
+        <span>LWIS | <a href="index.php">中文</a> | <a href="en/index.php">EN</a></span>
     </div>
     <br>
     <br>
     <div class="wrap">
         <a href="about.php">About | 關於我們</a>
-        <a href="products.php">Products | 產品系列</a>
+        <a href="products.php?category=sheet">Products | 產品系列</a>
         <a href="map.php">Map | 服務據點</a>
         <a href="contact.php">Contact | 聯絡我們</a>
         <a href="catalogs.php">Catalogs | 型錄</a>
@@ -51,7 +57,6 @@
         } else {
             x.className = "topnav";
         }
-        
         // var y = document.getElementById("mySVG");
         // y.classList.toggle("active");
     }

@@ -6,7 +6,6 @@ body {
 
 body {
     background: #eee;
-    
     color: #000;
     margin: 0;
     padding: 0;
@@ -23,10 +22,17 @@ main,
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    color: #FFF;
-    background:
+    color: #FFF ;
+    /* 原始圖 */
+    /* background:
         linear-gradient(to right, rgba(83, 71, 65, .55), rgba(83, 71, 65, .55)),
-        center / cover url(../images/about/bg.jpg);
+        center / cover url(../images/about/bg.webp); */
+    /* 卡其 */
+    background: #7e6e60;
+    /* 橄欖綠 */
+    /* background: #4e5437; */
+    /* 土耳其藍 */
+    /* background: #015b75; */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,6 +80,7 @@ main,
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    z-index: 0;
 }
 
 .mySwiper1 .swiper-slide,
@@ -87,20 +94,22 @@ main,
 }
 
 /* 分隔線 */
+
 .mySwiper1 .swiper-slide img {
     display: block;
     width: 100%;
     border-radius: .3rem;
     overflow: hidden;
 }
-
 /* 分隔線 */
 .mySwiper2 .swiper-slide h4 {
     text-align: center;
     color: #730;
     width: 100%;
 }
-
+/* .mySwiper2 .swiper-slide span.it:after{
+    content: \ud83c\uddee\ud83c\uddf9;
+} */
 .mySwiper2 .swiper-slide span {
     text-align: left;
     color: #444;
@@ -109,18 +118,18 @@ main,
 
 .mySwiper2 .swiper-slide img {
     margin: auto 3rem;
-    max-width: 100%;
-    max-height: 30%;
     width: auto;
     height: auto;
+    max-width: calc(100% - 10rem);
+    max-height: calc(20%);
 }
 
 .mySwiper2 .swiper-slide a.btn {
     background-color: #534741;
     color: #FFF;
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    right: .75rem;
+    bottom: .75rem;
 }
 
 .mySwiper2 .swiper-slide {
@@ -136,6 +145,8 @@ main,
     display: inline-block;
     font-size: 3rem;
     text-align: center;
+    -webkit-transform:translate3d(0,0,1000px);
+    transform: translate3d(0, 0, 1000px);
 }
 
 .animate__animated.animate__headShake {
@@ -143,14 +154,13 @@ main,
     left: 0;
     right: 0;
     bottom: 4.5rem;
-
+    
 }
 
 .animate__animated.animate__bounce {
     position: absolute;
     left: 0;
     right: 0;
-    /* top:80%; */
 }
 
 .swiper.mySwiper {
@@ -165,7 +175,7 @@ main,
 
 .swiper.mySwiper .swiper.mySwiper2+.animate__animated:after,
 .swiper.mySwiper .swiper.mySwiper1+.animate__animated:after {
-    z-index: 3;
+    z-index: 100;
 }
 @media (max-width:991px) {
     .swiper-slide .mycontainer {
@@ -180,9 +190,10 @@ main,
         height: 370px;
         border-radius: .3rem;
     }
-    main{
+    /* main{
         line-height: .75;
-    }
+    } */
+    
 }
 @media (min-width:1199px) and (max-height:579px) {
     .animate__animated span {
@@ -191,10 +202,41 @@ main,
         height: 1px;
         line-height: 2rem !important;
     }
+    #myscroll0,#myscroll1,#myscroll2{
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    #myscroll0,#myscroll1{
+        bottom: 3rem !important;
+    }
+    /* #myscroll1{
+        bottom: -2rem !important;
+    } */
+    #myscroll2{
+        bottom: 5rem !important;
+    }
 }
 @media (max-width:575px) {
-    main{
-        line-height: .55;
+    .swiper-pagination-bullet{
+        width:var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+        height:var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+    }
+    #myscroll1,#myscroll2{
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    #myscroll0,#myscroll1{
+        bottom: -1.5rem !important;
+    }
+    #myscroll2{
+        bottom: -4.5rem !important;
+    }
+    #swipe1,#swipe2{
+        position: relative;
+        top:-2.5rem;
+        z-index: 100;
     }
     .swiper-slide .mycontainer {
         top: 5.5rem;
@@ -205,17 +247,25 @@ main,
         height: 1px;
         line-height: 2rem !important;
     }
-    .mySwiper1 .swiper-slide,
+    .mySwiper1 .swiper-slide ,
     .mySwiper2 .swiper-slide {
         width: 280px;
         height: 200px;
         border-radius: .3rem;
     }
+    .mySwiper2 .swiper-slide img{
+        margin: auto 4rem auto 1rem;
+        max-width: calc(100% - 4rem);
+        max-height: 3rem;
+    }
+
+    /* .mySwiper2 .swiper-slide span:only-child{
+    } */
+    .mySwiper2 .swiper-slide>span.more:after{
+        content: "...";
+    }
     .mySwiper2 .swiper-slide>span>span{
         display: none;
-    }
-    .mySwiper2 .swiper-slide>span:after{
-        content: "..."; /* 要再調整 */
     }
     .swiper.mySwiper1,
     .swiper.mySwiper2 {
@@ -234,5 +284,14 @@ main,
     position: relative;
     right: 0;
     left: 0;
-    bottom: 0;
+}
+@media (min-width:1200px) {
+    #myscroll0{
+        position: relative;
+        bottom: -18.5rem;
+    }
+    #myscroll1{
+        position: relative;
+        bottom: -22rem;
+    }
 }

@@ -1,0 +1,21 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^lwis\.com\.tw$
+RewriteRule ^/?$ "https\:\/\/lwis\.com\.tw\/" [R=301,L]
+
+RewriteCond %{HTTP_REFERER} !^http://lwis.com.tw/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://lwis.com.tw$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lwis.com.tw/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.lwis.com.tw$      [NC]
+
+RewriteCond %{HTTP_REFERER} !^https://lwis.com.tw/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://lwis.com.tw$      [NC]
+
+RewriteCond %{HTTP_REFERER} !^https://www.lwis.com.tw/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.lwis.com.tw$      [NC]
+
+

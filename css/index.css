@@ -25,10 +25,10 @@ main p{
 @media (min-width: 1200px) and (min-height: 580px) {
     @keyframes identifier {
         0%{
-            background: center / auto 125% url(../images/index-bg.jpg);
+            background: center / auto 125% url(../images/index-bg.webp);
         }
         100%{
-            background: center / auto 150% url(../images/index-bg.jpg);
+            background: center / auto 150% url(../images/index-bg.webp);
         }
     }
     .mydiv{
@@ -53,10 +53,10 @@ main p{
 @media (min-width: 1200px) and (max-height:579px){
     @keyframes identifier {
         0%{
-            background: center / 100% url(../images/index-bg.jpg);
+            background: center / 100% url(../images/index-bg.webp);
         }
         100%{
-            background: center / 125% url(../images/index-bg.jpg);
+            background: center / 125% url(../images/index-bg.webp);
         }
     }
     .mydiv{
@@ -81,10 +81,10 @@ main p{
 @media (min-width: 768px) and (max-width:1199px){
     @keyframes identifier {
         0%{
-            background: center / auto 100% url(../images/index-bg.jpg);
+            background: center / auto 100% url(../images/index-bg.webp);
         }
         100%{
-            background: center / auto 125% url(../images/index-bg.jpg);
+            background: center / auto 125% url(../images/index-bg.webp);
         }
     }
     .mydiv{
@@ -109,10 +109,10 @@ main p{
 @media (max-width:767px){
     @keyframes identifier {
         0%{
-            background: center / auto 100% url(../images/index-bg.jpg);
+            background: center / auto 100% url(../images/index-bg.webp);
         }
         100%{
-            background: center / auto 125% url(../images/index-bg.jpg);
+            background: center / auto 125% url(../images/index-bg.webp);
         }
     }
     .mydiv{
@@ -138,10 +138,10 @@ main p{
 @media (max-width:575px){
     @keyframes identifier {
         0%{
-            background: center / auto 100% url(../images/index-bg.jpg);
+            background: center / auto 100% url(../images/index-bg.webp);
         }
         100%{
-            background: center / auto 150% url(../images/index-bg.jpg);
+            background: center / auto 150% url(../images/index-bg.webp);
         }
     }
 }

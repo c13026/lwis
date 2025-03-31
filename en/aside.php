@@ -1,0 +1,60 @@
+<header>
+    <div>
+        <div class="topnav" id="myTopnav">
+            <div class="helogo">
+                <a href="index.php">
+                    <img  src="../images/logo.svg" alt="LIVING WATER IN SPRING">
+                </a>
+                <span><a href="../index.php">中</a> | <a href="index.php">EN</a></span>
+            </div>
+            <a href="about.php"><span>About</span></a>
+            <a href="products.php?category=sheet"><span>Products</span></a>
+            <a href="map.php"><span>Map</span></a>
+            <a href="contact.php"><span>Contact</span></a>
+            <a href="catalogs.php"><span>Catalogs</span></a>
+            <a href="sitemap.php"><span>Sitemap</span></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" id="mySVG"><!-- onclick="this.classList.toggle('active')" -->
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                <path class="line middle" d="m 30,50 h 40"></path>
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+            </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside>
+    <div class="logo">
+        <a href="index.php">
+            <img  src="../images/logo.svg" alt="LIVING WATER IN SPRING">
+        </a>
+        <span>LWIS | <a href="../index.php">中文</a> | <a href="index.php">EN</a></span>
+        <!-- <a href="index.php">
+            <span>LIVING WATER IN SPRING</span>
+        </a> -->
+    </div>
+    <br>
+    <br>
+    <div class="wrap">
+        <a href="about.php">About</a>
+        <a href="products.php?category=sheet">Products</a>
+        <a href="map.php">Map</a>
+        <a href="contact.php">Contact</a>
+        <a href="catalogs.php">Catalogs</a>
+        <a class="mybottom" href="sitemap.php">Sitemap</a>
+    </div>
+    <p>Copyright © 2022 Lwis Inc.<br>All Rights Reserved.</p>
+</aside>
+<script>
+    function myFunction() {
+        $('#mySVG').toggleClass('active');
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        // var y = document.getElementById("mySVG");
+        // y.classList.toggle("active");
+    }
+</script>

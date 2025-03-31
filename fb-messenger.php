@@ -1,8 +1,8 @@
 <!-- Messenger 洽談外掛程式 Code -->
-<div id="fb-root"></div>
+<div id="fb-root animate__animated animate__fadeInRight"></div>
 
 <!-- Your 洽談外掛程式 code -->
-<div id="fb-customer-chat" class="fb-customerchat">
+<div id="fb-customer-chat" class="fb-customerchat" >
 </div>
 
 <script>

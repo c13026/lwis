@@ -1713,3 +1713,731 @@ Fancybox.bind('[data-fancybox="gallery62"]', {
         },
     },
 });
+// 63
+const mainCarousel63 = new Carousel(document.querySelector(".mainCarousel63"), {
+    Dots: false,
+});
+const thumbCarousel63 = new Carousel(document.querySelector(".thumbCarousel63"), {
+    Sync: {
+        target: mainCarousel63,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery63"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel63.slideTo(mainCarousel63.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 64
+const mainCarousel64 = new Carousel(document.querySelector(".mainCarousel64"), {
+    Dots: false,
+});
+const thumbCarousel64 = new Carousel(document.querySelector(".thumbCarousel64"), {
+    Sync: {
+        target: mainCarousel64,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery64"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel64.slideTo(mainCarousel64.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 65
+const mainCarousel65 = new Carousel(document.querySelector(".mainCarousel65"), {
+    Dots: false,
+});
+const thumbCarousel65 = new Carousel(document.querySelector(".thumbCarousel65"), {
+    Sync: {
+        target: mainCarousel65,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery65"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel65.slideTo(mainCarousel65.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 66
+const mainCarousel66 = new Carousel(document.querySelector(".mainCarousel66"), {
+    Dots: false,
+});
+const thumbCarousel66 = new Carousel(document.querySelector(".thumbCarousel66"), {
+    Sync: {
+        target: mainCarousel66,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery66"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel66.slideTo(mainCarousel66.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 67
+const mainCarousel67 = new Carousel(document.querySelector(".mainCarousel67"), {
+    Dots: false,
+});
+const thumbCarousel67 = new Carousel(document.querySelector(".thumbCarousel67"), {
+    Sync: {
+        target: mainCarousel67,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery67"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel67.slideTo(mainCarousel67.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 68
+const mainCarousel68 = new Carousel(document.querySelector(".mainCarousel68"), {
+    Dots: false,
+});
+const thumbCarousel68 = new Carousel(document.querySelector(".thumbCarousel68"), {
+    Sync: {
+        target: mainCarousel68,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery68"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel68.slideTo(mainCarousel68.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 69
+const mainCarousel69 = new Carousel(document.querySelector(".mainCarousel69"), {
+    Dots: false,
+});
+const thumbCarousel69 = new Carousel(document.querySelector(".thumbCarousel69"), {
+    Sync: {
+        target: mainCarousel69,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery69"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel69.slideTo(mainCarousel69.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 70
+const mainCarousel70 = new Carousel(document.querySelector(".mainCarousel70"), {
+    Dots: false,
+});
+const thumbCarousel70 = new Carousel(document.querySelector(".thumbCarousel70"), {
+    Sync: {
+        target: mainCarousel70,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery70"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel70.slideTo(mainCarousel70.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 71
+const mainCarousel71 = new Carousel(document.querySelector(".mainCarousel71"), {
+    Dots: false,
+});
+const thumbCarousel71 = new Carousel(document.querySelector(".thumbCarousel71"), {
+    Sync: {
+        target: mainCarousel71,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery71"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel71.slideTo(mainCarousel71.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 72
+const mainCarousel72 = new Carousel(document.querySelector(".mainCarousel72"), {
+    Dots: false,
+});
+const thumbCarousel72 = new Carousel(document.querySelector(".thumbCarousel72"), {
+    Sync: {
+        target: mainCarousel72,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery72"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel72.slideTo(mainCarousel72.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 73
+const mainCarousel73 = new Carousel(document.querySelector(".mainCarousel73"), {
+    Dots: false,
+});
+const thumbCarousel73 = new Carousel(document.querySelector(".thumbCarousel73"), {
+    Sync: {
+        target: mainCarousel73,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery73"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel73.slideTo(mainCarousel73.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 74
+const mainCarousel74 = new Carousel(document.querySelector(".mainCarousel74"), {
+    Dots: false,
+});
+const thumbCarousel74 = new Carousel(document.querySelector(".thumbCarousel74"), {
+    Sync: {
+        target: mainCarousel74,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery74"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel74.slideTo(mainCarousel74.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 75
+const mainCarousel75 = new Carousel(document.querySelector(".mainCarousel75"), {
+    Dots: false,
+});
+const thumbCarousel75 = new Carousel(document.querySelector(".thumbCarousel75"), {
+    Sync: {
+        target: mainCarousel75,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery75"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel75.slideTo(mainCarousel75.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 76
+const mainCarousel76 = new Carousel(document.querySelector(".mainCarousel76"), {
+    Dots: false,
+});
+const thumbCarousel76 = new Carousel(document.querySelector(".thumbCarousel76"), {
+    Sync: {
+        target: mainCarousel76,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery76"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel76.slideTo(mainCarousel76.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 77
+const mainCarousel77 = new Carousel(document.querySelector(".mainCarousel77"), {
+    Dots: false,
+});
+const thumbCarousel77 = new Carousel(document.querySelector(".thumbCarousel77"), {
+    Sync: {
+        target: mainCarousel77,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery77"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel77.slideTo(mainCarousel77.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 78
+const mainCarousel78 = new Carousel(document.querySelector(".mainCarousel78"), {
+    Dots: false,
+});
+const thumbCarousel78 = new Carousel(document.querySelector(".thumbCarousel78"), {
+    Sync: {
+        target: mainCarousel78,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery78"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel78.slideTo(mainCarousel78.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 79
+const mainCarousel79 = new Carousel(document.querySelector(".mainCarousel79"), {
+    Dots: false,
+});
+const thumbCarousel79 = new Carousel(document.querySelector(".thumbCarousel79"), {
+    Sync: {
+        target: mainCarousel79,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery79"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel79.slideTo(mainCarousel79.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 80
+const mainCarousel80 = new Carousel(document.querySelector(".mainCarousel80"), {
+    Dots: false,
+});
+const thumbCarousel80 = new Carousel(document.querySelector(".thumbCarousel80"), {
+    Sync: {
+        target: mainCarousel80,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery80"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel80.slideTo(mainCarousel80.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 81
+const mainCarousel81 = new Carousel(document.querySelector(".mainCarousel81"), {
+    Dots: false,
+});
+const thumbCarousel81 = new Carousel(document.querySelector(".thumbCarousel81"), {
+    Sync: {
+        target: mainCarousel81,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery81"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel81.slideTo(mainCarousel81.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 82
+const mainCarousel82 = new Carousel(document.querySelector(".mainCarousel82"), {
+    Dots: false,
+});
+const thumbCarousel82 = new Carousel(document.querySelector(".thumbCarousel82"), {
+    Sync: {
+        target: mainCarousel82,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery82"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel82.slideTo(mainCarousel82.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 83
+const mainCarousel83 = new Carousel(document.querySelector(".mainCarousel83"), {
+    Dots: false,
+});
+const thumbCarousel83 = new Carousel(document.querySelector(".thumbCarousel83"), {
+    Sync: {
+        target: mainCarousel83,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery83"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel83.slideTo(mainCarousel83.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 84
+const mainCarousel84 = new Carousel(document.querySelector(".mainCarousel84"), {
+    Dots: false,
+});
+const thumbCarousel84 = new Carousel(document.querySelector(".thumbCarousel84"), {
+    Sync: {
+        target: mainCarousel84,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery84"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel84.slideTo(mainCarousel84.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 85
+const mainCarousel85 = new Carousel(document.querySelector(".mainCarousel85"), {
+    Dots: false,
+});
+const thumbCarousel85 = new Carousel(document.querySelector(".thumbCarousel85"), {
+    Sync: {
+        target: mainCarousel85,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery85"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel85.slideTo(mainCarousel85.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 86
+const mainCarousel86 = new Carousel(document.querySelector(".mainCarousel86"), {
+    Dots: false,
+});
+const thumbCarousel86 = new Carousel(document.querySelector(".thumbCarousel86"), {
+    Sync: {
+        target: mainCarousel86,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery86"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel86.slideTo(mainCarousel86.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 87
+const mainCarousel87 = new Carousel(document.querySelector(".mainCarousel87"), {
+    Dots: false,
+});
+const thumbCarousel87 = new Carousel(document.querySelector(".thumbCarousel87"), {
+    Sync: {
+        target: mainCarousel87,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery87"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel87.slideTo(mainCarousel87.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 88
+const mainCarousel88 = new Carousel(document.querySelector(".mainCarousel88"), {
+    Dots: false,
+});
+const thumbCarousel88 = new Carousel(document.querySelector(".thumbCarousel88"), {
+    Sync: {
+        target: mainCarousel88,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery88"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel88.slideTo(mainCarousel88.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 89
+const mainCarousel89 = new Carousel(document.querySelector(".mainCarousel89"), {
+    Dots: false,
+});
+const thumbCarousel89 = new Carousel(document.querySelector(".thumbCarousel89"), {
+    Sync: {
+        target: mainCarousel89,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery89"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel89.slideTo(mainCarousel89.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});
+// 90
+const mainCarousel90 = new Carousel(document.querySelector(".mainCarousel90"), {
+    Dots: false,
+});
+const thumbCarousel90 = new Carousel(document.querySelector(".thumbCarousel90"), {
+    Sync: {
+        target: mainCarousel90,
+
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: true,
+});
+Fancybox.bind('[data-fancybox="gallery90"]', {
+    Carousel: {
+        on: {
+            change: (that) => {
+                mainCarousel90.slideTo(mainCarousel90.findPageForSlide(that.page), {
+
+                });
+            },
+        },
+    },
+});

@@ -1,246 +1,266 @@
-/* aside .wrap a:nth-child(3){
-
-} */
-main .carousel{
+main {
+    width: calc(100vw - 22rem);
+  }
+  .append{
+      position: absolute;
+      top:3.25rem;
+      z-index: 10;
+      width: calc(100vw - 22rem);
+      text-align: center;
+  }
+  h3{
+      color: #FFF;
+  }
+  p{
+      color: #dcc8b0;
+  }
+  p>a{
+      color: #FC0 !important;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal{
+      top:5.25rem;
+  }
+  .swiper-pagination-bullet {
+      color: #FFF !important;
+      background-color: #BAA58C;
+      margin: 0 .5rem !important;
+      width: unset;
+      height: unset;
+      display:inline;
+      padding:.5rem .75rem;
+      line-height: 1rem;
+      opacity: 1;
+      white-space:nowrap;
+      border-radius:.3rem;
+  }
+  .swiper-pagination-bullet-active {
+      box-shadow: 0 0 0 0.2rem rgba(69, 55, 48, 0.5);
+      background-color: #754C24 !important;
+  }
+  .swiper-pagination{
+      top:4.75rem;
+      bottom:unset;
+  }
+  .swiper {
     width: 100%;
-}
-main .carousel .carousel-caption{
-    top: 2rem;
-    bottom: unset;
-}
-main .carousel .carousel-caption>p{
-    color: #dcc8b0;
-}
-main .carousel .carousel-caption>p>a{
-    color: #FC0;
-}
-main .carousel .carousel-indicators{
-    bottom: unset;
-    top: 8rem;
-}
-main .carousel .carousel-indicators button.btn{
-    color: #FFF;
-    background-color: #BAA58C;
-    margin: auto .5rem;
-}
-main .carousel .carousel-indicators button.btn.active{
-    background-color: #754C24;
-}
-main .carousel .carousel-indicators button.btn:focus{
-    box-shadow: 0 0 0 0.2rem rgba(69, 55, 48, 0.5);
-}
-.carousel-item{
-    width:calc(100vw - 22rem);
-    height: 100vh;
-}
-@media (max-width: 1199px) {
-    .carousel-item{
-        width:100vw;
-        height: calc(100vh - 6rem); /* 看header高度 */
-    }
-}
-.carousel-item:nth-child(1){
-    background: 
-                linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-                center / cover url(../images/map/Taipei.jpg);
-    /* rgba(104, 75, 62, .55), */
-            /* #684B3E 55% center / cover url(../images/map/Taipei.jpg); */
-}
-.carousel-item:nth-child(2){
-    background: 
-               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-               center / cover url(../images/map/Hsinchu.jpg);
-}
-.carousel-item:nth-child(3){
-    background: 
-               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-               center / cover url(../images/map/Taichung.jpg);
-}
-.carousel-item:nth-child(4){
-    background: 
-               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-               center / cover url(../images/map/Yunlin);
-}
-.carousel-item:nth-child(5){
-    background: 
-               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-               center / cover url(../images/map/Chiayi.jfif);
-}
-.carousel-item:nth-child(6){
-    background: 
-               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
-               center / cover url(../images/map/Tainan.jpg);
-}
-.carousel-item .map{
-    width: 80%;
-    height: 400px;
-    /* height: auto; */
-    background-color: #fff4;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: .325rem;
-    position: absolute;
-    top: 13rem;
-    left: 10%;
-    right: 10%;
-    padding: 1rem;
-    color: #FFF;
-    
-}
-.carousel-item .map iframe{
-    width: 100%;
-    height: calc(400px - 2rem);
-    /* height: auto; */
-    border-radius: .325rem;
-    /* margin: 1rem; */
-}
-.carousel-item .map a{
-    color: unset;
-    text-decoration: none;
-}
-.mybadge{
-    background-color: #534741;
-}
-/* icon */
-.material-symbols-outlined {
-    position: relative;
-    bottom: -5px;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 100,
-    'opsz' 24
-}
-@media (min-width: 1200px) and (max-height:579px){
-    .carousel-item {
-        width: 100vw;
-        min-height: calc(100vh - 6rem);
-    }
-    .carousel-item .map{
-        width: 80%;
-        height: auto;
-        background-color: #fff4;
-        backdrop-filter: blur(6px);
+    height: 100%;
+  }
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .map{
+      width: 80%;
+      height: 400px;
+      /* height: auto; */
+      background-color: #fff4;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: .325rem;
+      position: absolute;
+      top: 13rem;
+      left: 10%;
+      right: 10%;
+      padding: 1rem;
+      color: #FFF;
+      
+  }
+  /* 有滑鼠時,指向性功能操作下 */
+  @media (any-hover: hover) {
+    .map iframe{
         border-radius: .325rem;
-        position: absolute;
-        top: 13rem;
-        left: 10%;
-        right: 10%;
-        padding: 1rem;
-        color: #FFF;
-        
+        -webkit-filter: opacity(60%) grayscale(50%);
+        filter: opacity(60%) grayscale(50%);
+        transition: all .25s ease-in-out;
     }
-    .carousel-item .map iframe{
-        width: 100%;
-        height: calc(200px - 2rem);
+    .map iframe:hover{
+        -webkit-filter: opacity(100%) grayscale(0%);
+        filter: opacity(100%) grayscale(0%);
+    }
+  }
+  /* 無指向性,如觸控 */
+  @media (any-hover: none) {
+    .map iframe{
         border-radius: .325rem;
+        -webkit-filter: opacity(100%) grayscale(0%);
+        filter: opacity(100%) grayscale(0%);
     }
-}
-@media (max-width: 991px) {
-    .carousel-item .map {
-        width: 90%;
-        left: 5%;
-        right: 5%;
-    }
-}
-@media (max-width: 768px) {
-    .carousel-item{
-        width:100vw;
-        height: calc(100vh - 3rem); /* 看header高度 */
-    }
-    .carousel-indicators{
-        width: calc(100% - 2rem);
-        margin: auto auto;
-    }
-    .carousel-caption {
-        position: absolute;
-        right: 0;
-        left: 0;
-    }
-    main .carousel .carousel-indicators {
-        top:9rem;
-    }
-}
-@media (max-width: 575px) {
-    .map .col-5 h3{
-         font-size: 1.75rem;
-    }
-    .map .col-5 h4{
-         font-size: 1rem;
-    }
-    .carousel-item .map {
-        width: calc(100% - 2rem);
-        left: 1rem;
-        right: 1rem;
-        top: 15rem;
-        bottom: calc(-1rem);
-        position: absolute;
+  }
+  .map iframe{
+      width: 100%;
+      height: calc(400px - 2rem);
+  }
 
-    }
-    .carousel-item:nth-child(1) .map,
-    .carousel-item:nth-child(2) .map,
-    .carousel-item:nth-child(3) .map{
-        height: 445px;
-    }
-    .carousel-item:nth-child(4) .map,
-    .carousel-item:nth-child(5) .map,
-    .carousel-item:nth-child(6) .map{
-        height: 470px;
-    }
-    .material-symbols-outlined{
-        font-size: 1.25rem;
-    }
-    .map>.row>.col-5 ,
-    .map>.row>.col-7 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .carousel-item .map iframe {
-        display: flex;
-        width: calc(100% - 2rem);
-        height: 290px;
-        border-radius: 0.325rem;
-        position: absolute;
-        right: 1rem;
-        left: 1rem;
-        top: unset;
-        bottom: unset;
-    }
-    .carousel-indicators {
-        margin-right: .5rem;
-        margin-left: .5rem;
-        margin: auto auto;
-        display: flex;
-        /* height: 3rem; */
-    }
-    .carousel-indicators .btn{
-        /* padding: unset; */
-        padding: .125rem .25rem;
-        width: 3rem;
-    }
-    .carousel-caption{
-        right: 1rem;
-        left: 1rem;
-    }
-}
-@media (max-width: 400px) {
-    main .carousel .carousel-indicators {
-        top: 10rem;
-    }
-    .carousel-indicators {
-        margin-right: .5rem;
-        margin-left: .5rem;
-        margin: auto auto;
-        display: flex;
-        /* height: 3rem; */
-    }
-    .carousel-indicators .btn{
-        font-size: .75rem;
-        padding: .125rem .25rem;
-        width: 3rem;
-    }
-    main .carousel .carousel-indicators button.btn {
-        margin: auto .325rem;
-    }
-}
+  .map a{
+      color: unset;
+      text-decoration: none;
+  }
+  .map p{
+      color:#FFF;
+  }
+  .mybadge{
+      background-color: #534741;
+  }
+  .material-symbols-outlined {
+      position: relative;
+      bottom: -5px;
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 100,
+      'opsz' 24
+  }
+  @media (max-width: 1199px) {
+      .swiper{
+          width:100vw;
+          height: calc(100vh - 6rem); /* 看header高度 */
+      }
+      .append {
+          top:calc(6rem + 3.25rem);
+          width: 100vw;
+      }
+  }
+  @media (min-width: 1200px) and (max-height:579px){
+      .append {
+          top:calc(6rem + 3.25rem);
+          width: 100vw;
+      }
+      .swiper {
+          width: 100vw;
+          min-height: calc(100vh - 6rem);
+      }
+      .map{
+          width: 80%;
+          height: auto;
+          background-color: #fff4;
+          backdrop-filter: blur(6px);
+          border-radius: .325rem;
+          position: absolute;
+          top: 13rem;
+          left: 10%;
+          right: 10%;
+          padding: 1rem;
+          color: #FFF;
+          
+      }
+      .map iframe{
+          width: 100%;
+          height: calc(200px - 2rem);
+          border-radius: .325rem;
+      }
+  }
+  @media (max-width: 991px) {
+      .map {
+          width: 90%;
+          left: 5%;
+          right: 5%;
+      }
+      .map .col-5 h3{
+          font-size: 1.425rem;
+          /* line-height: .75; */
+          font-weight: 600;
+          margin-bottom:0 !important;
+      }
+      .map .col-5 h4{
+          font-size: 1.325rem;
+      }
+  }
+  @media (max-width: 768px) {
+      .swiper {
+          width:100vw;
+          height: calc(100vh - 3rem); /* 看header高度 */
+      }
+      .append {
+          top:6.25rem;
+      }
+      .map .col-5 h4{
+          font-size: 1.25rem;
+      }
+  }
+  @media (max-width: 575px) {
+      .swiper-pagination-bullets.swiper-pagination-horizontal {
+          top: 5.75rem;
+      }
+      .swiper-pagination-bullet {
+          margin: 0 .325rem .35rem !important;
+          padding:.375rem .5rem;
+          line-height: 2.75rem;
+          border-radius:.25rem;
+          font-size:.9rem;
+      }
+      .map .col-5 h3{
+          font-size: 1.5rem;
+          font-weight: 600;
+      }
+      .map .col-5 h4{
+          font-size: 1rem;
+      }
+      .swiper-slide .map {
+          width: calc(100% - 2rem);
+          left: 1rem;
+          right: 1rem;
+          /* top: 15rem; */
+          top:12rem;
+          bottom: calc(-1rem);
+          position: absolute;
+      }
+      .swiper-slide .map{
+          height: 445px;
+      }
+      .material-symbols-outlined{
+          font-size: 1.25rem;
+      }
+      .map>.row>.col-5 ,
+      .map>.row>.col-7 {
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+      }
+      .swiper-slide:nth-child(7) .map iframe,
+      .swiper-slide:nth-child(6) .map iframe{
+          height: 256px !important;
+      }
+      .swiper-slide .map iframe {
+          display: flex;
+          width: calc(100% - 2rem);
+          height: 280px;
+          border-radius: 0.325rem;
+          position: absolute;
+          right: 1rem;
+          left: 1rem;
+          top: unset;
+          bottom: unset;
+      }
+  }
+  @media (max-width: 400px) {
+      main .carousel .carousel-indicators {
+          top: 10rem;
+      }
+      .swiper-slide .map{
+          top:15rem;
+      }
+      .swiper-slide .map iframe{
+          height: 284px;
+      }
+      .swiper-slide:nth-child(7) .map iframe,
+      .swiper-slide:nth-child(6) .map iframe{
+          height: 260px !important;
+      }
+      .map .col-5 h3{
+          font-size: 1.325rem;
+          font-weight: 500;
+      }
+      .map .col-5 h4{
+          font-size: 1rem;
+      }
+  }

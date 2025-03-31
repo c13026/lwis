@@ -31,12 +31,15 @@ h3,p{
     bottom:0;
     left: calc(8% + 22rem); /* 算上aside */
     right: 8%;
+    height: fit-content;
+    min-height: 100%;
 }
 .link-group{
     padding-top: 12rem;
     width: 33.333%;
     text-align: center;
 }
+
 .link-group a:hover,
 .link-group:hover{
     background: 
@@ -99,6 +102,11 @@ h3,p{
     .mycontainer{
         font-size:1.125rem;
     }
+    .link-group {
+        padding-top: 12.5rem;
+        width: 100%;
+        text-align: center;
+    }
 }
 @media (max-width:575px){
     .myrow {
@@ -108,7 +116,7 @@ h3,p{
         right: .5rem;
     }
     .link-group{
-        padding-top: 15rem;
+        padding-top: 12.5rem;
         width: 100%;
         text-align: center;
     }

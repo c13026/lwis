@@ -11,5 +11,12 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="css/aside.css">
-<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="icon" href="http://open.lwis.com.tw/ogimages/favicon.ico">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<meta property="og:image" content="http://open.lwis.com.tw/ogimages/ogimage.jpg">
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta property="og:image:alt" content="活水泉源國際股份有限公司 Living Water In Spring International Co., Ltd." />
 <!-- </head> -->

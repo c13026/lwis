@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <title>活水泉源國際股份有限公司</title>
 <?php include("all-head.php"); ?>

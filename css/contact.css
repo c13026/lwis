@@ -16,6 +16,9 @@ main>p{
     color: #dcc8b0;
     margin: 0 1rem .5rem;
 }
+main>p>a{
+    color: #FC0 !important;
+}
 .mycontainer{
     width: 80%;
     margin: 0 auto;

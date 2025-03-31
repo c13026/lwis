@@ -23,13 +23,23 @@ aside{
     position: sticky;
     top: 0;
 }
+
+
 aside .logo{
     padding-top: 3rem;
     width: inherit;
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 }
+
+aside .logo span{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #EEE;
+}
+
 aside .logo a{
     display: inline-block;
     font-size: 1.25rem;
@@ -102,10 +112,10 @@ header .topnav a:before{
     top: 0;
     right: -.75rem;
 }
-header .topnav a:nth-child(1).active,
-header .topnav a:nth-child(1).active:before,
-header .topnav a:nth-child(1):before,
-header .topnav a:nth-child(1):hover:before{
+header .topnav .helogo a.active,
+header .topnav .helogo a.active:before,
+header .topnav .helogo a:before,
+header .topnav .helogo a:hover:before{
     background:unset;
 }
 header .topnav a:hover:before ,
@@ -141,6 +151,15 @@ header{
     /* header z-index小於30(零件數)造成滑動時 高度同header時會覆蓋住header */
 }
 /*  */
+.helogo span a{
+    display: inline !important;
+}
+.helogo span{
+    display: inline;
+    color: #FFF !important;
+    flex-direction: row !important;
+    text-align: center;
+}
 
 .ham {
     cursor: pointer;
@@ -156,6 +175,7 @@ header{
 }
 .hamRotate.active {
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     -webkit-tap-highlight-color: transparent;
     /* z-index: 111 !important; */
 }
@@ -186,15 +206,12 @@ header{
 }
 .ham8.active .top {
     stroke-dashoffset: -64px;
-    /* z-index: 9999 !important; */
 }
 .ham8.active .middle {
     transform: rotate(90deg);
-    /* z-index: 9999 !important; */
 }
 .ham8.active .bottom {
     stroke-dashoffset: -64px;
-    /* z-index: 9999 !important; */
 }
 /*  */
 @media (min-width: 1200px) and (min-height: 580px) {
@@ -203,6 +220,12 @@ header{
     }
     header{
         display: none;
+    }
+    header .topnav a{
+        display: flex;
+        flex-flow: row wrap;
+        /* flex-flow: column nowrap; */
+        text-align: center;
     }
 }
 @media (min-width: 1200px) and (max-height:579px) {
@@ -225,6 +248,7 @@ header{
     header .topnav a{
         display: flex;
         flex-flow: column wrap;
+        /* flex-flow: column nowrap; */
         text-align: center;
     }
     header .topnav>a{
@@ -277,7 +301,6 @@ header{
         position:fixed;
         top: 1;
         z-index: 101;
-        /* z-index: 99; */
     }
     header .helogo{
         width: 5rem;
@@ -305,6 +328,7 @@ header{
         justify-content: center;
         align-items: center;
         width: 9rem !important;
+        flex-direction: column;
     }
     .topnav .icon {
         display: none;
@@ -328,11 +352,7 @@ header{
 }
 @media (max-width: 767px) {
     header .topnav a.active:before {
-        background: linear-gradient(to right, #BAA58C 0%, #BAA58C 100%),
-            /* linear-gradient(to top, #BAA58C 50%, transparent 50%), */
-            linear-gradient(to top, #BAA58C 50%, transparent 50%),
-            linear-gradient(to right, #BAA58C 0%, #BAA58C 100%),
-            linear-gradient(to left, #BAA58C 0%, #BAA58C 100%);
+        background: linear-gradient(to right, #BAA58C 0%, #BAA58C 100%), linear-gradient(to top, #BAA58C 50%, transparent 50%), linear-gradient(to top, #BAA58C 50%, transparent 50%), linear-gradient(to right, #BAA58C 0%, #BAA58C 100%), linear-gradient(to left, #BAA58C 0%, #BAA58C 100%);
         background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
         background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
         background-repeat: no-repeat, no-repeat;
@@ -343,11 +363,7 @@ header{
         position: absolute;
         width: 100%;
         height: 100% ;
-        background: linear-gradient(to right, #FFF 0%, #FFF 100%),
-            /* linear-gradient(to top, #FFF 50%, transparent 50%), */
-            linear-gradient(to top, #FFF 50%, transparent 50%),
-            linear-gradient(to right, #FFF 0%, #FFF 100%),
-            linear-gradient(to left, #FFF 0%, #FFF 100%);
+            background: linear-gradient(to right, #FFF 0%, #FFF 100%), linear-gradient(to top, #FFF 50%, transparent 50%), linear-gradient(to top, #FFF 50%, transparent 50%), linear-gradient(to right, #FFF 0%, #FFF 100%), linear-gradient(to left, #FFF 0%, #FFF 100%);
         background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
         background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
         background-repeat: no-repeat, no-repeat;
@@ -386,9 +402,10 @@ header{
     }
     .helogo {
         width: inherit !important;
-        /* width: 9rem !important; */
+        flex-direction: row;
     }
-    .helogo a{
+    /*  */
+    /* .helogo a{
         height: 3rem;
         width: 100% !important;
         overflow: hidden;
@@ -402,7 +419,22 @@ header{
     }
     .helogo{
         display: flex;
+    } */
+    /*  */
+
+    .helogo a{
+        height: 3rem;
+        width: 100% !important;
+        overflow: hidden;
     }
+    .helogo img{
+        width: 3rem;
+        margin: auto 0.5rem;
+    }
+    .helogo span{
+        white-space:nowrap;
+    }
+    /*  */
     .topnav a.icon{
         display: flex;
         width: 3rem !important;
@@ -411,7 +443,7 @@ header{
         align-items: center;
         padding: unset;
         /* z-index: 100; */
-        background-color: #0002;
+        /* background-color: #0002; */
     }
     header .topnav{
         justify-content: space-between;
@@ -420,6 +452,11 @@ header{
         display: flex;
         /* border:#F00 1px solid; */
     }
+    /* header .topnav>a:nth-child(1){
+        border:#00F 1px solid;
+        width: calc(100% - 16px);
+        height: 5px;
+    } */
     header .topnav>a{
         display: none;
     }
@@ -439,14 +476,15 @@ header{
         background-color: rgba(83,71,65, .5);
         backdrop-filter:blur(3px);
         -webkit-backdrop-filter:blur(3px);
-        /* z-index: 100; */
+        
     }
-    header .topnav.responsive>a:nth-child(8){
+    /* header .topnav.responsive>a:nth-child(8){
         background: unset;
         background-color: unset;
-        /* z-index: 111 !important; */
-    }
+        display: flexbox;
+    } */
     header .topnav.responsive>a>span:nth-child(1){
+        background-color: unset;
         order: 1;
     }
     header .topnav.responsive>a>span:nth-child(2){
@@ -456,14 +494,17 @@ header{
     header .topnav.responsive>a>span:nth-child(3){
         order: 3;
     }
-    .topnav.responsive .icon{
+    .topnav.responsive .icon,
+    .topnav.responsive .icon>svg{
         position: absolute;
         right: 0;
         top: 0;
-        background-color: #0007 !important;
     }
     header .topnav.responsive {
         display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height:100%;
     }
   }
 /* .abc{

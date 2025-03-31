@@ -1,48 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <title>服務據點|活水泉源</title>
+<meta name="keywords" content="磁磚,瓷磚,藝術,拼貼,裝潢,室內設計,室內,室外,塗料,伊斯曼,精品磁磚,進口塗料,進口磁磚,型錄,tile demo,雨水回收,Ismanity,伊斯曼,a-cornerstone,可樂石,eternal stone,達理石,a-holystone,活麗石"><!-- α-cornerstone -->
+    <meta name="description" content="活水泉源國際股份有限公司，歡迎來電洽詢或使用表單聯繫我們，活水泉源旗下品牌有:可樂石a-cornerstone、達理石Eternal stone、活麗石a-Holystone、愛沃IWall智能建材、伊斯曼塗料Ismanity、雨水回收。">
+
+    <meta property="og:title" content="活水泉源|服務據點">
+    <meta property="og:description" content="活水泉源國際股份有限公司，歡迎來電洽詢或使用表單聯繫我們，活水泉源旗下品牌有:可樂石a-cornerstone、達理石Eternal stone、活麗石a-Holystone、愛沃IWall智能建材、伊斯曼塗料Ismanity、雨水回收。">
+
 <?php include("all-head.php"); ?>
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/map.css">
 </head>
 <body>
 <?php include("aside.php"); ?>
+<div style="display:none;">
+    <?php if($_GET["seat"] == "taipei"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(1);
+            });
+        </script>
+    <?php }elseif($_GET["seat"] == "hsinchu"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(2);
+            });
+        </script>
+    <?php }elseif($_GET["seat"] == "taichung"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(3);
+            });
+        </script>
+    <?php }elseif($_GET["seat"] == "yunlin"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(4);
+            });
+        </script>
+    <?php }elseif($_GET["seat"] == "chiayi"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(5);
+            });
+        </script>
+    <?php }elseif($_GET["seat"] == "tainan"){ ?>
+        <script>
+            $(function(){
+                swiper.slideTo(0);
+            });
+        </script>
+    <?php }else{ ?> 
+    <?php } ?>
+</div>
 <main>
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="carousel-caption">
-            <h3>Map | 服務據點</h3>
-            <p>仍有許多疑問嗎？建議您以自己鄰近或方便的據點<a href="contact.php">聯繫我們</a>，我們將盡快為您服務。</p>
-        </div> 
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button data-target="#demo" data-slide-to="0" class="btn active">台北</button>
-            <button data-target="#demo" data-slide-to="1" class="btn">新竹</button>
-            <button data-target="#demo" data-slide-to="2" class="btn">台中彰化南投</button>
-            <button data-target="#demo" data-slide-to="3" class="btn">雲林</button>
-            <button data-target="#demo" data-slide-to="4" class="btn">嘉義</button>
-            <button data-target="#demo" data-slide-to="5" class="btn">台南</button>
-        </div>
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
+    <div class="append">
+        <h3>Map | 服務據點</h3>
+        <p>仍有許多疑問嗎？建議您以自己鄰近或方便的據點<a href="contact.php">聯繫我們</a>，我們將盡快為您服務。</p>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Taipei.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>台北分公司</h3>
+                            <h3>活水泉源-台北分公司</h3>
                             <h4>
-                                <a href="tel:+886227481530">
-                                    <span class="material-symbols-outlined">
-                                        call
-                                    </span> 02-2748-1530
-                                </a>
+                                <a href="tel:+886227481500"><span class="material-symbols-outlined">call</span> 02-2748-1500</a>
                                 <br>
-                                <a href="http://maps.google.com.tw/maps?q=台北市松山區寶清街30巷12號">
-                                    <span class="material-symbols-outlined">
-                                        pin_drop
-                                    </span> 台北市松山區寶清街30巷12號
-                                </a>
+                                <a href="http://maps.google.com.tw/maps?q=台北市松山區寶清街30巷12號"><span class="material-symbols-outlined">pin_drop</span> 台北市松山區寶清街30巷12號</a>
                                 <br>
-                                <p>可放一些服務項目：<span class="badge mybadge">雨水回收</span>、<span class="badge mybadge">磁磚</span></p>
+                                <p>服務項目：<span class="badge mybadge">雨水回收</span>、<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span><br>品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span></p>
                             </h4>
                         </div>
                         <div class="col-7">
@@ -51,11 +82,11 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Hsinchu.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>新竹總經銷</h3>
+                            <h3>新竹總經銷-鼎康進口磁磚</h3>
                             <h4>
                                 <a href="tel:+88635588777">
                                     <span class="material-symbols-outlined">
@@ -68,7 +99,7 @@
                                     pin_drop
                                     </span> 新竹縣竹北市文采街2號
                                 </a>
-                                <p>可放一些服務項目：<span class="badge mybadge">磁磚</span></p>
+                                <p>服務項目：<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span><br>代理品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span></p>
                             </h4>
                         </div>
                         <div class="col-7">
@@ -77,11 +108,11 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Taichung.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>中部總經銷(中彰投)</h3>
+                            <h3>中部總經銷-S.J.昕展磁磚</h3><!-- (中彰投) -->
                             <h4>
                                 <a href="tel:+886952996903">
                                     <span class="material-symbols-outlined">
@@ -94,7 +125,7 @@
                                     pin_drop
                                     </span> 台中市大雅區中山路165號
                                 </a>
-                                <p>可放一些服務項目：<span class="badge mybadge">磁磚</span></p>
+                                <p>服務項目：<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span><br>代理品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span></p>
                             </h4>
                         </div>
                         <div class="col-7">
@@ -103,43 +134,37 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Yunlin.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>雲林總經銷</h3>
+                            <h3>雲林總經銷-高頓建材</h3>
                             <h4>
-                                <a href="tel:+886982909985">
+                                <a href="tel:+8855321500">
                                     <span class="material-symbols-outlined">
                                     call
-                                    </span> 0982-909-985
+                                    </span> 05-532-1500
                                 </a>
                                 <br>
-                                <a href="tel:+88656627559">
-                                    <span class="material-symbols-outlined">
-                                    call
-                                    </span> 05-662-7559
-                                </a>
-                                <br>
-                                <a href="http://maps.google.com.tw/maps?q=雲林縣土庫鎮中圍路15-10號">
+                                <a href="http://maps.google.com.tw/maps?q=雲林縣斗六市中華路304號">
                                     <span class="material-symbols-outlined">
                                     pin_drop
-                                    </span> 雲林縣土庫鎮中圍路15-10號
+                                    </span> 雲林縣斗六市中華路304號
                                 </a>
-                                <p>可放一些服務項目：<span class="badge mybadge">磁磚</span></p>
+                                <p>服務項目：<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span><br>代理品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span></p>
                             </h4>
                         </div>
                         <div class="col-7">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0538266169574!2d120.37496000000002!3d23.674033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eba3fe4462e89%3A0x97462f3b862604a!2z5YGl5Z-O5aCh5LyB5qWt5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1655107725463!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.093515963825!2d120.54951940000001!3d23.7083543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec838678c71e5%3A0xc45a82d0abdc4240!2z6auY6aCT5bu65p2Q5pyJ6ZmQ5YWs5Y-4IC0g57K-5ZOB56OB56Oa!5e0!3m2!1szh-TW!2stw!4v1668490400160!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Chiayi.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>嘉義總經銷</h3>
+                            <h3>嘉義總經銷-晉仕企業</h3>
                             <h4>
                                 <a href="tel:+886963004785">
                                     <span class="material-symbols-outlined">
@@ -153,12 +178,12 @@
                                     </span> 05-235-1934
                                 </a>
                                 <br>
-                                <a href="http://maps.google.com.tw/maps?q=雲林縣土庫鎮中圍路15-10號">
+                                <a href="http://maps.google.com.tw/maps?q=嘉義縣水上鄉寬士村701-82號">
                                     <span class="material-symbols-outlined">
                                     pin_drop
                                     </span> 嘉義縣水上鄉寬士村崎仔頭701-82號
                                 </a>
-                                <p>可放一些服務項目：<span class="badge mybadge">磁磚</span></p>
+                                <p>服務項目：<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span><br>代理品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span></p>
                             </h4>
                         </div>
                         <div class="col-7">
@@ -167,53 +192,74 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide" style="background:linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),center / cover url(images/map/Tainan.webp);">
                 <div class="map">
                     <div class="row">
                         <div class="col-5">
-                            <h3>台南總代理</h3>
+                            <h3>活水泉源-台南總公司</h3>
                             <h4>
-                                <a href="tel:+88662995500">
+                                <a href="tel:+88662962000">
                                     <span class="material-symbols-outlined">
                                     call
-                                    </span> 06-299-5500
+                                    </span> 06-296-2000
                                 </a>
                                 <br>
-                                <a href="tel:+88662993582">
+                                <a href="tel:+88662960606">
                                     <span class="material-symbols-outlined">
                                     call
-                                    </span> 06-299-3582
+                                    </span> 06-296-0606
                                 </a>
                                 <br>
-                                <a href="http://maps.google.com.tw/maps?q=台南市安平區永華三街333號">
+                                <a href="http://maps.google.com.tw/maps?q=台南市南區鯤鯓路101巷759號">
                                     <span class="material-symbols-outlined">
                                     pin_drop
-                                    </span> 台南市安平區永華三街333號B1
+                                    </span> 台南市南區鯤鯓路101巷759號
                                 </a><br>
-                                <p>可放一些服務項目：<span class="badge mybadge">雨水回收</span>、<span class="badge mybadge">磁磚</span>、<span class="badge mybadge">塗料</span></p>
+                                <p>服務項目：<span class="badge mybadge">雨水回收</span>、<span class="badge mybadge">薄板</span>、<span class="badge mybadge">磁磚</span>、<span class="badge mybadge">塗料</span><br>品牌：<span class="badge mybadge">可樂石</span> <span class="badge mybadge">達理石</span> <span class="badge mybadge">活麗石</span> <span class="badge mybadge">iwail</span> <span class="badge mybadge">伊斯曼</span></p>
                                 
                             </h4>
                         </div>
                         <div class="col-7">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.720353831823!2d120.18221729999999!3d22.9973086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e766d2c53f17f%3A0x48be34aaed2e5969!2zNzA45Y-w5Y2X5biC5a6J5bmz5Y2A5rC46I-v5LiJ6KGXMzMz6Jmf!5e0!3m2!1szh-TW!2stw!4v1655108483374!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.030218943846!2d120.17184007600834!3d22.94911417922532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e75753ccc087d%3A0xd21f435340662d32!2z5rS75rC05rOJ5rqQ5ZyL6Zqb6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1687319039257!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </main>
 <?php include("fb-messenger.php"); ?>
+<script src="js/swiper-bundle.min.js"></script>
 <script>
-    $("header .topnav a").eq(3).addClass("active");
+    $("header .topnav a").eq(5).addClass("active");
     $("aside .wrap a").eq(2).addClass("active");
 
-    $("#demo .carousel-indicators button").hover(function(){   //.mousemove
-        $("#demo").carousel(Number($(this).attr('data-slide-to')));
+    var swiper = new Swiper('.mySwiper', {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className ,a) {
+                var a = ["台北", "新竹", "台中彰化南投", "雲林", "嘉義", "台南"];
+                return '<span class="' + className + '">' + (a[index]) + "</span>";
+            },
+        },
+        loop: true,
+        // mousewheel: true,
+        // keyboard : true,
+        autoplay: {
+            delay: 5000,
+            pauseOnMouseEnter: true,
+            // disableOnInteraction: true,
+        },
+        // debugger: true,
     });
-    // $("#demo .carousel-indicators button").mouseleave(function(){
-    //     return false;
-    // });
+    //鼠标滑过pagination控制swiper切换
+    for(i=0;i<swiper.pagination.bullets.length;i++){
+        swiper.pagination.bullets[i].onmouseover=function(){
+            this.click();
+            // swiper.autoplay.stop();
+        };
+    };
 </script>
 </body>
 </html>

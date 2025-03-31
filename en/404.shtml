@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Living Water In Spring International Co., Ltd.</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="/css/aside.css">
+<link rel="icon" href="/images/favicon.ico">
+<!-- <link rel="stylesheet" href="css/index.css"> -->
+<style>
+    main{
+        background:rgba(83, 71, 65, .7);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-content: center;
+    }
+    .mybtn{
+        color: #FFF;
+        background-color: #534741;
+        margin: 0 .75rem;
+        font-size: 1.25rem;
+    }
+    form{
+        display: inline;
+    }
+    .btn{
+        padding: .275rem .75rem;
+    }
+    .mybtn:hover{
+        background-color: #754C24;
+        color: #FFF;
+    }
+    .mybtn:focus{
+        box-shadow: 0 0 0 0.2rem rgb(117 76 36 / 25%);
+    }
+    .container-fluid{
+        text-align: center;
+        padding: unset;
+        margin: auto auto;
+        height: auto;
+    }
+    main img{
+        display: block;
+        margin:2rem auto;
+        max-width:80%;
+        width: 500px;
+    }
+    main p:nth-child(1){
+        margin: 3rem 0;
+    }
+    main .myp,
+    main p{
+        margin: 0;
+        color: #FFF;
+        font-size: 1.25rem;
+    }
+    .myhr{
+        width: 100%;
+        min-height: 4rem;
+        height: 6vmax;
+        background:center / auto 100% url(/images/error-hr.svg);
+        margin: 3rem 0;
+    }
+    main input,main button,main a{
+        color: #FFF;
+    }
+    @media (min-width: 400px) and (max-width: 575px) {
+        .mybtn{
+            font-size: 1rem;
+            padding: .125rem .5rem;
+            margin: 0 .5rem;
+        }
+        main .myp,
+        main p{
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 399px) {
+        .mybtn{
+            font-size: .9rem;
+            padding: .125rem .5rem;
+            margin: 0 .25rem;
+        }
+        main .myp,
+        main p{
+            font-size: .9rem;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <div>
+        <div class="topnav" id="myTopnav">
+            <div class="helogo">
+                <a href="/index.php">
+                    <img  src="/images/logo.svg" alt="活水泉源">
+                    <span>活水泉源國際</span>
+                </a>
+            </div>
+            <a href="/about.php"><span>About</span><span> | </span><span>關於我們</span></a>
+            <a href="/products.php"><span>Products</span><span> | </span><span>產品系列</span></a>
+            <a href="/map.php"><span>Map</span><span> | </span><span>服務據點</span></a>
+            <a href="/contact.php"><span>Contact</span><span> | </span><span>聯絡我們</span></a>
+            <a href="/catalogs.php"><span>Catalogs</span><span> | </span><span>型錄</span></a>
+            <a href="/sitemap.php"><span>Sitemap</span><span> | </span><span>網站地圖</span></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" id="mySVG"><!-- onclick="this.classList.toggle('active')" -->
+                <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+                <path class="line middle" d="m 30,50 h 40"></path>
+                <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+            </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside>
+    <div class="logo">
+        <a href="/index.php">
+            <img  src="/images/logo.svg" alt="活水泉源"><br>
+            <span>活水泉源國際 | lwis.com</span>
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="wrap">
+        <a href="/about.php">About | 關於我們</a>
+        <a href="/products.php">Products | 產品系列</a>
+        <a href="/map.php">Map | 服務據點</a>
+        <a href="/contact.php">Contact | 聯絡我們</a>
+        <a href="/catalogs.php">Catalogs | 型錄</a>
+        <a class="mybottom" href="/sitemap.php">Sitemap | 網站地圖</a>
+    </div>
+    <p>Copyright © 2022 Lwis Inc.<br>All Rights Reserved.</p>
+</aside>
+<script>
+    function myFunction() {
+        $('#mySVG').toggleClass('active');
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<main>
+
+<div class="container-fluid">
+
+    <img src="/images/error.svg">
+
+    <p>您所查看的網頁已被刪除、移動或從未存在。</p>
+    <div class="myp">您可返回<button class="btn mybtn" onclick="history.back(-1)">上一頁</button>，或將問題<form action="/mail-404.php" method="post" name="zzz" target="foo" onsubmit="window.open('','foo','resizable=1,scrollbars=1,width=500,height=200')"><input id="url" type="hidden" name="url" charset="UTF-8"><button class="btn mybtn" type="submit">提交</button></form>給我們</div>
+    <div class="myhr"></div>
+    <script>
+        var prev = window.location.href;
+        $("#url").attr("value",prev);
+    </script>
+</div>
+</main>
+</body>
+</html>
