@@ -1,8 +1,7 @@
-**```php
+```php
 <?php
 echo "Hello, GitHub!";
-?>
-**
+
 
 這樣在 GitHub 上的 README 會顯示格式化的 PHP 代碼。  
 
