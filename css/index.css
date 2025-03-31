@@ -1,0 +1,147 @@
+main{
+    width: 100%;
+    animation: identifier 20s ease 0s infinite alternate forwards;
+    -webkit-animation: identifier 20s ease 0s infinite alternate forwards;
+}
+.mydiv{
+    background: #0004;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    position: absolute;
+}
+.mydiv1{
+    border:3px #FFF9 solid;
+    position: absolute;
+}
+.mydiv2{ /*放內文*/
+    position: absolute;
+    color: #FFF;
+}
+main p{
+    margin-bottom: 0;
+    font-size:1.25rem;
+    line-height: 2rem;
+}
+@media (min-width: 1200px) and (min-height: 580px) {
+    @keyframes identifier {
+        0%{
+            background: center / auto 125% url(../images/index-bg.jpg);
+        }
+        100%{
+            background: center / auto 150% url(../images/index-bg.jpg);
+        }
+    }
+    .mydiv{
+        width: 30%;
+        height: 120px;
+        bottom: 12%;
+        left: calc(22rem + 6%);
+    }
+    .mydiv1{
+        width: 30%;
+        height: 120px;
+        left: calc(22rem + 6% + 16px);
+        bottom: calc(12% + 16px);
+    }
+    .mydiv2{ /*放內文*/
+        width: calc(30% - 3rem);
+        height: calc(120px - 3rem);
+        left: calc(22rem + 6% + 16px + 1rem);
+        bottom: calc(12% + 16px + 1rem);
+    }
+}
+@media (min-width: 1200px) and (max-height:579px){
+    @keyframes identifier {
+        0%{
+            background: center / 100% url(../images/index-bg.jpg);
+        }
+        100%{
+            background: center / 125% url(../images/index-bg.jpg);
+        }
+    }
+    .mydiv{
+        width: 30%;
+        height: 120px;
+        bottom: 12%;
+        left: 15%;
+    }
+    .mydiv1{
+        width: 30%;
+        height: 120px;
+        left: calc(15% + 16px);
+        bottom: calc(12% + 16px);
+    }
+    .mydiv2{ /*放內文*/
+        width: calc(30% - 3rem);
+        height: calc(120px - 3rem);
+        left: calc(15% + 16px + 1rem);
+        bottom: calc(12% + 16px + 1rem);
+    }
+}
+@media (min-width: 768px) and (max-width:1199px){
+    @keyframes identifier {
+        0%{
+            background: center / auto 100% url(../images/index-bg.jpg);
+        }
+        100%{
+            background: center / auto 125% url(../images/index-bg.jpg);
+        }
+    }
+    .mydiv{
+        width: 420px;
+        height: 120px;
+        bottom: 8%;
+        left: 8%;
+    }
+    .mydiv1{
+        width: 420px;
+        height: 120px;
+        left: calc(8% + 16px);
+        bottom: calc(8% + 16px);
+    }
+    .mydiv2{ /*放內文*/
+        width: calc(420px - 3rem);
+        height: calc(120px - 3rem);
+        left: calc(8% + 16px + 1rem);
+        bottom: calc(8% + 16px + 1rem);
+    }
+}
+@media (max-width:767px){
+    @keyframes identifier {
+        0%{
+            background: center / auto 100% url(../images/index-bg.jpg);
+        }
+        100%{
+            background: center / auto 125% url(../images/index-bg.jpg);
+        }
+    }
+    .mydiv{
+        height: 150px;
+        bottom: 1rem;
+        left: 1rem;
+        right: 2rem;
+
+    }
+    .mydiv1{
+        height: 150px;
+        left: 2rem;
+        right: 1rem;
+        bottom: 2rem;
+    }
+    .mydiv2{ /*放內文*/
+        height: calc(150px - 3rem);
+        left: 3rem;
+        right: 3rem;
+        bottom: 3rem;
+    }
+}
+@media (max-width:575px){
+    @keyframes identifier {
+        0%{
+            background: center / auto 100% url(../images/index-bg.jpg);
+        }
+        100%{
+            background: center / auto 150% url(../images/index-bg.jpg);
+        }
+    }
+}

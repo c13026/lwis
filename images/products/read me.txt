@@ -1,0 +1,5 @@
+sheet=薄板
+mesa=檯面
+tile=磁磚
+stone=石板
+iwall、trim=飾板

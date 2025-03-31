@@ -1,0 +1,257 @@
+.details {
+    width: 80%;
+    max-width: 1140px;
+    margin: 1rem auto 0;
+    background: #DDD;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-12.col-lg-6 {
+    text-align: left;
+}
+.mmm{
+    display: none;
+}
+.show{
+    display: block;
+}
+.col-12.col-lg-6:nth-child(odd) {
+    padding: 1rem .5rem 1rem 1rem;
+}
+.col-12.col-lg-6:nth-child(even) {
+    padding: 1rem 1rem 1rem .5rem;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {}
+@media (max-width: 991px) {
+    .details {
+        margin: 1rem auto;
+    }
+    .col-12.col-lg-6:nth-child(odd) {
+        padding: 1rem;
+    }
+
+    .col-12.col-lg-6:nth-child(even) {
+        padding: 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .details {
+        width: 100%;
+    }
+}
+
+/* 麵包屑 */
+ul.breadcrumb {
+    list-style: none;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding: unset;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    color: #555;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #555;
+    content: "／";
+}
+
+ul.breadcrumb li a {
+    color: #AAA;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #603813;
+    text-decoration: none;
+}
+
+.material-symbols-rounded {
+    line-height: 1rem;
+    position: relative;
+    top: .25rem;
+    font-variation-settings:
+        'FILL'1, 'wght'400, 'GRAD'0, 'opsz'48
+}
+
+.breadcrumb~img {
+    height: 2.5rem;
+    padding: .625rem 0;
+    display: block;
+}
+
+.breadcrumb~h3 {
+    margin-bottom: .375rem;
+    color: #555;
+}
+.ex{
+    display: none;
+}
+.ex p,
+.breadcrumb~p {
+    display: block;
+    color: #555;
+    margin-bottom: .375rem;
+}
+/* .myautotoggle{
+    background-color: #999 ;
+}
+.myautotoggle.active{
+    background-color: #555;
+} */
+/* 款式 */
+.mysize input[type="radio"],
+.small-img input[type="radio"] {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+.mysize button.check,
+.small-img button.check {
+    border: unset;
+    background: transparent;
+}
+.mysize div.btn-secondary{
+    background-color: #777;
+    border-color: #777;
+}
+.mysize div.btn-secondary:hover{
+    background-color: #555;
+    /* border-color: #555; */
+}
+.mysize div.btn-secondary.active{
+    background-color: #333;
+    border-color: #333;
+}
+.mysize input[disabled] + button div.btn-secondary,
+.mysize input:disabled + button div.btn-secondary{
+    background-color: #999 !important;
+    border-color: #999 !important;
+}
+.mysize input[type="radio"]:checked + button.active div.btn-secondary{
+    background-color: #333;
+    border: 1px solid #333;
+    box-sizing: content-box !important;
+}
+.small-img img {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid transparent;
+    border-radius: .25rem;
+    padding: 2px;
+    box-sizing: content-box !important;
+    transition: all 0.15s ease-in-out;
+}
+
+.small-img input[type="radio"]:checked + button.active img{
+    border: 3px solid #AAA;
+    box-sizing: content-box !important;
+}
+/* 按鈕 */
+.row.mydescription .col.btn {
+    padding: .25rem .75rem;
+    text-align: center;
+}
+
+.row.mydescription .col.btn:nth-child(odd) {
+    margin: 0 .5rem 0 0;
+}
+
+.row.mydescription .col.btn:nth-child(even) {
+    margin: 0 0 0 .5rem;
+}
+
+/* 分隔線 */
+.mainCarousel {
+    width: 735px; /* width和max-width都要有，只有max-width RWD會異常 */
+    /* height: 307.125px; */
+    max-width: 100%;
+    margin: 0 auto;
+    --carousel-button-color: #170724;
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+        0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+.mainCarousel .carousel__slide {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.mainCarousel .carousel__button.is-prev {
+    left: 0;
+    border-radius:0 .25rem .25rem 0;
+    opacity: .5;
+}
+
+.mainCarousel .carousel__button.is-next {
+    right: 0;
+    border-radius:.25rem 0 0 .25rem;
+    opacity: .5;
+}
+
+.mainCarousel .carousel__button:focus {
+    outline: none;
+    box-shadow:0 0 0 4px #3336;
+    opacity: .75;
+}
+
+.thumbCarousel .carousel__slide {
+    opacity: 0.35;
+    padding: 0;
+    width: 100px;
+    height: 66.66px;
+}
+@media (min-width: 767px) and (max-width: 991px){
+    .thumbCarousel .carousel__slide {
+        width: 120px;
+        height: 80px;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px){
+    .thumbCarousel .carousel__slide {
+        width: 100px;
+        height: 66.66px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 450px){
+    .thumbCarousel .carousel__slide {
+        width: 90px;
+        height: 60px;
+    }
+}
+@media (max-width: 400px){
+    .thumbCarousel .carousel__slide {
+        width: 73.6px;
+        height: 49px;
+    }
+}
+.thumbCarousel .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbCarousel .carousel__slide.is-nav-selected {
+    opacity: 1;
+}
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after{
+    border-color:var(--fancybox-accent-color, rgba(255, 255, 255, 0.65));
+    border-width:3px
+}

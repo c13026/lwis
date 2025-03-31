@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* ::selection{
+    background-color: #FC0;
+    color: #000;
+}
+a::selection,
+a ::selection{
+    background-color: #000;
+    color: #FC0;
+}
+body{
+    display: flex;
+}
+
+aside{
+    width: 22rem;
+    height: 100vh;
+    background-color: #534741;
+    position: sticky;
+    top: 0;
+}
+aside .logo{
+    padding-top: 3rem;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+aside .logo a{
+    display: inline-block;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #EEE;
+    text-decoration: none;
+}
+aside .logo a img{
+    width: 7rem;
+}
+
+aside .wrap{
+    width:inherit;
+    display:inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+header .topnav a{
+    text-decoration: none;
+    color: #FFF;
+    position: relative;
+}
+header .topnav a.active,
+aside .wrap a.active{
+    color: #BAA58C !important;
+}
+aside .wrap a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: .65rem;
+    /* text-transform: uppercase; */
+    text-align: center;
+    position: relative;
+    margin:  0 .75rem;
+    flex-grow: 1;
+    cursor: pointer;
+}
+header .topnav a.active:before,
+aside .wrap a.active:before {
+    background: linear-gradient(to right, #BAA58C 0%, #BAA58C 100%), linear-gradient(to top, #BAA58C 50%, transparent 50%), linear-gradient(to top, #BAA58C 50%, transparent 50%), linear-gradient(to right, #BAA58C 0%, #BAA58C 100%), linear-gradient(to left, #BAA58C 0%, #BAA58C 100%);
+    background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
+    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    transform: scaleX(0) rotate(0deg);
+}
+header .topnav a:before,
+aside .wrap a:before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to right, #FFF 0%, #FFF 100%), linear-gradient(to top, #FFF 50%, transparent 50%), linear-gradient(to top, #FFF 50%, transparent 50%), linear-gradient(to right, #FFF 0%, #FFF 100%), linear-gradient(to left, #FFF 0%, #FFF 100%);
+    background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
+    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out, background-size 0.3s ease-in-out;
+    transform: scaleX(0) rotate(0deg);
+    transition-delay: 0.6s, 0.3s, 0s;
+}
+aside .wrap a:before{
+    width: 100%;
+    height: 100%;
+    top: calc(2px/-1);
+    left: calc(2px/-1);
+}
+header .topnav a:before{
+    width: 7rem;
+    height: 4rem;
+    top: 0;
+    right: -.75rem;
+}
+header .topnav a:nth-child(1).active,
+header .topnav a:nth-child(1).active:before,
+header .topnav a:nth-child(1):before,
+header .topnav a:nth-child(1):hover:before{
+    background:unset;
+}
+header .topnav a:hover:before ,
+aside .wrap a:hover:before {
+    background-size: 200% 1px, 1px 400%, 1px 400%, 55% 1px, 55% 1px;
+    background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+    transform: scaleX(1) rotate(0deg);
+    transition-delay: 0s, 0.3s, 0.6s;
+}
+
+aside .wrap a.mybottom{
+    width: calc(22rem - 1.5rem);
+    position: absolute;
+    bottom: 4rem;
+    left: 1;
+    right: 1;
+}
+aside p{
+    color: #FFF;
+    text-align: center;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    right: 1;
+}
+header{
+    display: block;
+    background-color: #534741;
+    height: 6rem;
+    width: 100vw;
+    z-index: 30;
+    /* header z-index小於30(零件數)造成滑動時 高度同header時會覆蓋住header */
+}
+/*  */
+
+.ham {
+    cursor: pointer;
+    /* fill:transparent; */
+
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .4s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* z-index: 111 !important; */
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+    -webkit-tap-highlight-color: transparent;
+    /* z-index: 111 !important; */
+}
+/* .hamRotate180.active { */
+    /* transform: rotate(180deg); */
+    /* z-index: 111 !important; */
+/* } */
+.line {
+    fill:none;
+    transition: stroke-dasharray .4s, stroke-dashoffset .4s;
+    stroke:#FFF;
+    stroke-width:5.5;
+    stroke-linecap:round;
+    /* z-index: 115; */
+}
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform .4s;
+}
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform .4s, stroke-dashoffset .4s;
+}
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+    /* z-index: 9999 !important; */
+}
+.ham8.active .middle {
+    transform: rotate(90deg);
+    /* z-index: 9999 !important; */
+}
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+    /* z-index: 9999 !important; */
+}
+/*  */
+@media (min-width: 1200px) and (min-height: 580px) {
+    aside{
+        display: block;
+    }
+    header{
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (max-height:579px) {
+    aside{
+        display: none;
+    }
+    main{
+        margin-top: 6rem; /* 同header高度 */
+        min-height: calc(100vh - 6rem);
+    }
+    header{
+        display: flex;
+        position:fixed;
+        top: 1;
+        /* z-index: 99; */
+    }
+    header .helogo{
+        width: 5rem;
+    }
+    header .topnav a{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    header .topnav>a{
+        padding: .5rem .75rem;
+    }
+    header .topnav>a>span:nth-child(1){
+        order: 2;
+    }
+    header .topnav>a>span:nth-child(2){
+        display: none;
+    }
+    header .topnav>a>span:nth-child(3){
+        order: 1;
+    }
+    .helogo{
+        padding: unset;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 9rem !important;
+    }
+    .topnav .icon {
+        display: none;
+    }
+    main{
+        margin-top: 6rem; /* 同header高度 */
+        min-height: calc(100vh - 6rem);
+    }
+    .helogo img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    header .topnav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height:6rem;
+        width: 100vw;
+    }
+}
+@media (max-width: 1199px) {
+    aside{
+        display: none;
+    }
+    main{
+        margin-top: 6rem; /* 同header高度 */
+        min-height: calc(100vh - 6rem);
+    }
+    header{
+        position:fixed;
+        top: 1;
+        z-index: 101;
+        /* z-index: 99; */
+    }
+    header .helogo{
+        width: 5rem;
+    }
+    header .topnav a{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    header .topnav>a{
+        padding: .5rem .75rem;
+    }
+    header .topnav>a>span:nth-child(1){
+        order: 2;
+    }
+    header .topnav>a>span:nth-child(2){
+        display: none;
+    }
+    header .topnav>a>span:nth-child(3){
+        order: 1;
+    }
+    .helogo{
+        padding: unset;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 9rem !important;
+    }
+    .topnav .icon {
+        display: none;
+      }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    main{
+        margin-top: 6rem; /* 同header高度 */
+        min-height: calc(100vh - 6rem);
+    }
+    .helogo img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    header .topnav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height:6rem;
+    }
+}
+@media (max-width: 767px) {
+    header .topnav a.active:before {
+        background: linear-gradient(to right, #BAA58C 0%, #BAA58C 100%),
+            /* linear-gradient(to top, #BAA58C 50%, transparent 50%), */
+            linear-gradient(to top, #BAA58C 50%, transparent 50%),
+            linear-gradient(to right, #BAA58C 0%, #BAA58C 100%),
+            linear-gradient(to left, #BAA58C 0%, #BAA58C 100%);
+        background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
+        background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+        background-repeat: no-repeat, no-repeat;
+        transform: scaleX(0) rotate(0deg);
+    }
+    header .topnav a:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100% ;
+        background: linear-gradient(to right, #FFF 0%, #FFF 100%),
+            /* linear-gradient(to top, #FFF 50%, transparent 50%), */
+            linear-gradient(to top, #FFF 50%, transparent 50%),
+            linear-gradient(to right, #FFF 0%, #FFF 100%),
+            linear-gradient(to left, #FFF 0%, #FFF 100%);
+        background-size: 100% 1px, 1px 200%, 1px 200%, 0% 1px, 0% 1px;
+        background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+        background-repeat: no-repeat, no-repeat;
+        transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out, background-size 0.3s ease-in-out;
+        transform: scaleX(0) rotate(0deg);
+        transition-delay: 0.6s, 0.3s, 0s;
+    }
+    
+    header .topnav a:before{
+        top: -1;
+        left: 0;
+        right: 0;
+    }
+    header .topnav a:nth-child(8).active,
+    header .topnav a:nth-child(8).active:before,
+    header .topnav a:nth-child(8):before,
+    header .topnav a:nth-child(8):hover:before{
+        background:unset;
+    }
+    header .topnav a:hover:before{
+        position:absolute;
+        background-size: 200% 1px, 1px 400%, 1px 400%, 55% 1px, 55% 1px;
+        background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+        transform: scaleX(1) rotate(0deg);
+        transition-delay: 0s, 0.3s, 0.6s;
+    }
+    /* 分隔線 */
+    header{
+        height: 3rem;
+        padding: unset;
+        margin: unset;
+    }
+    main{
+        margin-top: 3rem; /* 同header高度 */
+        min-height: calc(100vh - 3rem);
+    }
+    .helogo {
+        width: inherit !important;
+        /* width: 9rem !important; */
+    }
+    .helogo a{
+        height: 3rem;
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .helogo img{
+        width: 3rem;
+        margin: auto 0.5rem;
+    }
+    .helogo span{
+        display: none;
+    }
+    .helogo{
+        display: flex;
+    }
+    .topnav a.icon{
+        display: flex;
+        width: 3rem !important;
+        height: 3rem !important;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+        /* z-index: 100; */
+        background-color: #0002;
+    }
+    header .topnav{
+        justify-content: space-between;
+        align-items: center;
+        height:3rem;
+        display: flex;
+        /* border:#F00 1px solid; */
+    }
+    header .topnav>a{
+        display: none;
+    }
+    header .topnav.responsive{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height:3rem;
+    }
+    header .topnav.responsive>a{
+        display: flex;
+        color: #FFF;
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(83,71,65, .5);
+        backdrop-filter:blur(3px);
+        -webkit-backdrop-filter:blur(3px);
+        /* z-index: 100; */
+    }
+    header .topnav.responsive>a:nth-child(8){
+        background: unset;
+        background-color: unset;
+        /* z-index: 111 !important; */
+    }
+    header .topnav.responsive>a>span:nth-child(1){
+        order: 1;
+    }
+    header .topnav.responsive>a>span:nth-child(2){
+        display:inline-block;
+        order: 2;
+    }
+    header .topnav.responsive>a>span:nth-child(3){
+        order: 3;
+    }
+    .topnav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #0007 !important;
+    }
+    header .topnav.responsive {
+        display: flex;
+    }
+  }
+/* .abc{
+    background: repeating-linear-gradient(45deg, #09F, #93F, #F36);
+} */

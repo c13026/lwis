@@ -1,0 +1,118 @@
+body{ /* main */
+    background:
+        rgba(83, 71, 65, .8);
+}
+main{ 
+    padding-top: 3.25rem;
+    width: 100%;
+    text-align: center;
+}
+main>h3{
+    color: #FFF;
+}
+main p{
+    color: #dcc8b0;
+    font-size: 1rem;
+}
+h3,p{
+    z-index: 100 !important;
+}
+.mycontainer{
+    width: calc(100% - 2rem);
+    margin: auto 1rem;
+    color: #FFF;
+    text-align: center;
+    font-size:1.25rem;
+}
+.myrow{
+    display:flex;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: calc(8% + 22rem); /* 算上aside */
+    right: 8%;
+}
+.link-group{
+    padding-top: 12rem;
+    width: 33.333%;
+    text-align: center;
+}
+.link-group a:hover,
+.link-group:hover{
+    background: 
+        linear-gradient(90deg, transparent, rgba(66,33,11, .1),rgba(66,33,11, .2),rgba(66,33,11, .3),rgba(66,33,11, .2),rgba(66,33,11, .1), transparent);
+}
+.link-group,
+.link-title,
+.little{
+    display:flex;
+    flex-direction: column;
+}
+.link-group>a{
+    padding: .5rem;
+    color: #FFF;
+    text-decoration: none;
+}
+.link-title>a{
+    padding: .5rem;
+    color: #c3ae95;
+    text-decoration: none;
+}
+.little>a{
+    padding: .5rem;
+    color: #f7ac3b;
+    text-decoration: none;
+}
+.link-group>a:hover,
+.link-title>a:hover,
+.little>a:hover{
+    color: #FC0;
+}
+@media (max-height: 579px){
+    .myrow {
+        display:flex;
+        position: absolute;
+        left: 15% ; 
+        right: 15%;
+    }
+    .link-group{
+        padding-top: 15rem;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (min-width:576px) and (max-width: 1199px){
+    .myrow {
+        display:flex;
+        position: absolute;
+        left: 3% ; 
+        right: 3%;
+    }
+    .link-group{
+        padding-top: 15rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:767px) {
+    .mycontainer{
+        font-size:1.125rem;
+    }
+}
+@media (max-width:575px){
+    .myrow {
+        display:flex;
+        position: absolute;
+        left: .5rem ; 
+        right: .5rem;
+    }
+    .link-group{
+        padding-top: 15rem;
+        width: 100%;
+        text-align: center;
+    }
+    .mycontainer{
+        font-size:1rem;
+    }
+}

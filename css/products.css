@@ -1,0 +1,107 @@
+.divs{
+    width: 80%;
+    max-width:1140px;
+    margin: 1rem auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    
+}
+.mycard{
+    -ms-flex: 0 0 calc(33.333% - 2rem);
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    width: calc(33.333% - 2rem);
+    margin: 1rem 1rem;
+    height: 12.5rem;
+    overflow: hidden;
+    border-radius: .3rem;
+    background-position: center;
+    background-size: 100%;
+    transition: background-size 3s ease;
+    display: none;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+  }
+.mycard:hover{
+    background-size: 130%;
+    transition: background-size 3s ease;
+}
+.card-head{
+    background-color: rgba(255,255,255, .65);
+    height: 2rem;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: .3rem .3rem 0 0;
+}
+.card-head>img{
+    height: 1.25rem;
+    position: relative;
+    top:.125rem;
+}
+.card-head>img.img1{
+    height: 1.75rem;
+    position: relative;
+    top:.25rem;
+}
+.card-foot{
+    background-color: rgba(53,41,36, .6);
+    height: 2rem;
+    position: relative;
+    top:calc(12.5rem - 4rem);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    color:#CCC;
+    line-height:2rem;
+    border-radius: 0 0 .3rem .3rem;
+}
+.card-foot>span:nth-child(1){
+    float: left;
+    padding-left: .75rem;
+}
+.card-foot>span:nth-child(2){
+    float: right;
+    padding-right:.75rem;
+}
+@media (max-width:1440px) and (min-width:1200px) {
+    .mycard{
+        -ms-flex: 0 0 calc(50% - 2rem);
+        flex: 0 0 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+        width: calc(50% - 2rem);
+    }
+}
+@media (max-width:991px) and (min-width:768px) {
+    .mycard{
+        -ms-flex: 0 0 calc(50% - 2rem);
+        flex: 0 0 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+        width: calc(50% - 2rem);
+    }
+}
+@media (max-width:767px){
+    .divs{
+        width: 100%;
+    }
+    .mycard{
+        -ms-flex: 0 0 calc(50% - 2rem);
+        flex: 0 0 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+        width: calc(50% - 2rem);
+    }
+}
+@media (max-width:575px){
+    .divs{
+        width: 100%;
+    }
+    .mycard{
+        -ms-flex: 0 0 calc(100% - 2rem);
+        flex: 0 0 calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+        width: calc(100% - 2rem);
+    }
+}

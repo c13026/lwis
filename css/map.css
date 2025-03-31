@@ -1,0 +1,246 @@
+/* aside .wrap a:nth-child(3){
+
+} */
+main .carousel{
+    width: 100%;
+}
+main .carousel .carousel-caption{
+    top: 2rem;
+    bottom: unset;
+}
+main .carousel .carousel-caption>p{
+    color: #dcc8b0;
+}
+main .carousel .carousel-caption>p>a{
+    color: #FC0;
+}
+main .carousel .carousel-indicators{
+    bottom: unset;
+    top: 8rem;
+}
+main .carousel .carousel-indicators button.btn{
+    color: #FFF;
+    background-color: #BAA58C;
+    margin: auto .5rem;
+}
+main .carousel .carousel-indicators button.btn.active{
+    background-color: #754C24;
+}
+main .carousel .carousel-indicators button.btn:focus{
+    box-shadow: 0 0 0 0.2rem rgba(69, 55, 48, 0.5);
+}
+.carousel-item{
+    width:calc(100vw - 22rem);
+    height: 100vh;
+}
+@media (max-width: 1199px) {
+    .carousel-item{
+        width:100vw;
+        height: calc(100vh - 6rem); /* 看header高度 */
+    }
+}
+.carousel-item:nth-child(1){
+    background: 
+                linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+                center / cover url(../images/map/Taipei.jpg);
+    /* rgba(104, 75, 62, .55), */
+            /* #684B3E 55% center / cover url(../images/map/Taipei.jpg); */
+}
+.carousel-item:nth-child(2){
+    background: 
+               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+               center / cover url(../images/map/Hsinchu.jpg);
+}
+.carousel-item:nth-child(3){
+    background: 
+               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+               center / cover url(../images/map/Taichung.jpg);
+}
+.carousel-item:nth-child(4){
+    background: 
+               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+               center / cover url(../images/map/Yunlin);
+}
+.carousel-item:nth-child(5){
+    background: 
+               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+               center / cover url(../images/map/Chiayi.jfif);
+}
+.carousel-item:nth-child(6){
+    background: 
+               linear-gradient(to right, rgba(104, 75, 62, .55),  rgba(104, 75, 62, .55)),
+               center / cover url(../images/map/Tainan.jpg);
+}
+.carousel-item .map{
+    width: 80%;
+    height: 400px;
+    /* height: auto; */
+    background-color: #fff4;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: .325rem;
+    position: absolute;
+    top: 13rem;
+    left: 10%;
+    right: 10%;
+    padding: 1rem;
+    color: #FFF;
+    
+}
+.carousel-item .map iframe{
+    width: 100%;
+    height: calc(400px - 2rem);
+    /* height: auto; */
+    border-radius: .325rem;
+    /* margin: 1rem; */
+}
+.carousel-item .map a{
+    color: unset;
+    text-decoration: none;
+}
+.mybadge{
+    background-color: #534741;
+}
+/* icon */
+.material-symbols-outlined {
+    position: relative;
+    bottom: -5px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 100,
+    'opsz' 24
+}
+@media (min-width: 1200px) and (max-height:579px){
+    .carousel-item {
+        width: 100vw;
+        min-height: calc(100vh - 6rem);
+    }
+    .carousel-item .map{
+        width: 80%;
+        height: auto;
+        background-color: #fff4;
+        backdrop-filter: blur(6px);
+        border-radius: .325rem;
+        position: absolute;
+        top: 13rem;
+        left: 10%;
+        right: 10%;
+        padding: 1rem;
+        color: #FFF;
+        
+    }
+    .carousel-item .map iframe{
+        width: 100%;
+        height: calc(200px - 2rem);
+        border-radius: .325rem;
+    }
+}
+@media (max-width: 991px) {
+    .carousel-item .map {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-item{
+        width:100vw;
+        height: calc(100vh - 3rem); /* 看header高度 */
+    }
+    .carousel-indicators{
+        width: calc(100% - 2rem);
+        margin: auto auto;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    main .carousel .carousel-indicators {
+        top:9rem;
+    }
+}
+@media (max-width: 575px) {
+    .map .col-5 h3{
+         font-size: 1.75rem;
+    }
+    .map .col-5 h4{
+         font-size: 1rem;
+    }
+    .carousel-item .map {
+        width: calc(100% - 2rem);
+        left: 1rem;
+        right: 1rem;
+        top: 15rem;
+        bottom: calc(-1rem);
+        position: absolute;
+
+    }
+    .carousel-item:nth-child(1) .map,
+    .carousel-item:nth-child(2) .map,
+    .carousel-item:nth-child(3) .map{
+        height: 445px;
+    }
+    .carousel-item:nth-child(4) .map,
+    .carousel-item:nth-child(5) .map,
+    .carousel-item:nth-child(6) .map{
+        height: 470px;
+    }
+    .material-symbols-outlined{
+        font-size: 1.25rem;
+    }
+    .map>.row>.col-5 ,
+    .map>.row>.col-7 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .carousel-item .map iframe {
+        display: flex;
+        width: calc(100% - 2rem);
+        height: 290px;
+        border-radius: 0.325rem;
+        position: absolute;
+        right: 1rem;
+        left: 1rem;
+        top: unset;
+        bottom: unset;
+    }
+    .carousel-indicators {
+        margin-right: .5rem;
+        margin-left: .5rem;
+        margin: auto auto;
+        display: flex;
+        /* height: 3rem; */
+    }
+    .carousel-indicators .btn{
+        /* padding: unset; */
+        padding: .125rem .25rem;
+        width: 3rem;
+    }
+    .carousel-caption{
+        right: 1rem;
+        left: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    main .carousel .carousel-indicators {
+        top: 10rem;
+    }
+    .carousel-indicators {
+        margin-right: .5rem;
+        margin-left: .5rem;
+        margin: auto auto;
+        display: flex;
+        /* height: 3rem; */
+    }
+    .carousel-indicators .btn{
+        font-size: .75rem;
+        padding: .125rem .25rem;
+        width: 3rem;
+    }
+    main .carousel .carousel-indicators button.btn {
+        margin: auto .325rem;
+    }
+}
